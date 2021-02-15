@@ -29,8 +29,10 @@ int main()
     // Вывожу
     printf("%d bytes from file %s:\n%s\n", size, filename, text);
 
+    // Закрыывю поток и проверяю, что все правильно
     if (close(fd) < 0) {
         printf("Can\'t close file\n");
+        exit(-1);
     }
 
     return 0;
