@@ -85,9 +85,5 @@ int main(void) {
     }
     printf("Script \'task02-1.c\' finished sending messages\n");
 
-//    // Удаляем очередь
-//    msgctl(msqid, IPC_RMID, (struct msqid_ds *) NULL);
-
-
     return 0;
 }
